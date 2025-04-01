@@ -12,8 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hotdogb
@@ -21,6 +21,15 @@ PRODUCT_DEVICE := hotdogb
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := HD1901
 PRODUCT_BRAND := OnePlus
+
+# Infinity-X Specific Flags
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := "Guneet Atwal"
+
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true 
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 

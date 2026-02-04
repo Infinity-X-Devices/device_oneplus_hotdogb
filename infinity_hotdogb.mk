@@ -30,6 +30,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_BLUR := true
 TARGET_HAS_UDFPS := true 
 
+# Disable Matlog
+TARGET_DISABLE_MATLOG := true
+
 # Gapps
 WITH_GAPPS := true
 

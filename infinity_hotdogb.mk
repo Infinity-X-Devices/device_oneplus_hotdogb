@@ -33,6 +33,9 @@ TARGET_HAS_UDFPS := true
 # Disable Matlog
 TARGET_DISABLE_MATLOG := true
 
+# Don't build Aperture
+PRODUCT_NO_CAMERA := true
+
 # Gapps
 WITH_GAPPS := true
 
